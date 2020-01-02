@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRCodile.Lib", "CRCodile.Lib\CRCodile.Lib.csproj", "{DD3FABA9-3745-462D-A38D-096797CBCD0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRCodile.Lib.Tests", "CRCodile.Lib.Tests\CRCodile.Lib.Tests.csproj", "{6D7C83DD-D82F-4700-BA94-DAB857349CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRCodile.App", "CRCodile.App\CRCodile.App.csproj", "{C53982E1-D2E1-41D9-9BC4-150ADD49F4CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD3FABA9-3745-462D-A38D-096797CBCD0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3FABA9-3745-462D-A38D-096797CBCD0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3FABA9-3745-462D-A38D-096797CBCD0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3FABA9-3745-462D-A38D-096797CBCD0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7C83DD-D82F-4700-BA94-DAB857349CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7C83DD-D82F-4700-BA94-DAB857349CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7C83DD-D82F-4700-BA94-DAB857349CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7C83DD-D82F-4700-BA94-DAB857349CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53982E1-D2E1-41D9-9BC4-150ADD49F4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53982E1-D2E1-41D9-9BC4-150ADD49F4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53982E1-D2E1-41D9-9BC4-150ADD49F4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53982E1-D2E1-41D9-9BC4-150ADD49F4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

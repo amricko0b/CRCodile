@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{C53982E1-D2E1-41D9-9BC4-150ADD49F4CC}</ProjectGuid>
+        <OutputType>WinExe</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>CRCodile.App</RootNamespace>
+        <AssemblyName>CRCodile.App</AssemblyName>
+        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>7.3</LangVersion>
+        <ApplicationIcon>crocodile-32px.ico</ApplicationIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <ApplicationIcon>crocodile-32px.ico</ApplicationIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <ApplicationIcon>crocodile-32px.ico</ApplicationIcon>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Drawing" />
+        <Reference Include="System.Windows.Forms" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="App.cs" />
+        <Compile Include="ConvertButton.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="ConvertButton.Designer.cs">
+          <DependentUpon>ConvertButton.cs</DependentUpon>
+        </Compile>
+        <Compile Include="DumpEventArgs.cs" />
+        <Compile Include="DumpManager.cs">
+          <SubType>Component</SubType>
+        </Compile>
+        <Compile Include="DumpPicker.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="DumpPicker.Designer.cs">
+          <DependentUpon>DumpPicker.cs</DependentUpon>
+        </Compile>
+        <Compile Include="MainForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="MainForm.Designer.cs">
+          <DependentUpon>MainForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="PathEventArgs.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="TypeLabel.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="TypeLabel.Designer.cs">
+          <DependentUpon>TypeLabel.cs</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\CRCodile.Lib\CRCodile.Lib.csproj">
+        <Project>{dd3faba9-3745-462d-a38d-096797cbcd0b}</Project>
+        <Name>CRCodile.Lib</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
